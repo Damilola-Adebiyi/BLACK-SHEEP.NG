@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: url(./img/bkg.svg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333333;
+    font-size: 16px;
+}
+
+.main-container{
+    width: 1200px;
+    height: 500px;
+    background-color: linear-gradient(104.93deg, rgba(255, 255, 255, 0.25) -1.21%, rgba(255, 7, 7, 0.1) 102.28%);
+    box-shadow: 5px 10px 40px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    border: 5px solid #FFFFFF;
+    backdrop-filter: 17px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    margin: .5rem 5rem;
+}
+
+.navigation .nav-items{
+    display: flex;
+    align-items: center;
+}
+
+.nav-items a{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+}
+
+.nav-items li{
+    margin: 0 3rem;
+}
+
+.main-section{
+    display: flex;
+    margin: 1rem 5rem;
+}
+
+.main-section .left-section{
+    width: 100%;
+}
+
+.main-section .left-section p{
+    padding-bottom: 1rem;
+}
+
+.main-section .left-section h1{
+    font-size: 3rem;
+}
+
+.main-section .right-section{
+    width: 100%;
+    position: relative;
+}
+
+.main-section .right-section .image-container{
+    position: relative;
+}
+
+.circle{
+    position: absolute;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-11px);
+    top: auto;
+    width: 550px;
+    height: 350px;
+}
+
+.shopper{
+    position: absolute;
+    left: 50%;
+    z-index: 5;
+    transform: translateX(-50%) translateY(7px);
+    top: auto;
+    width: 250.03px;
+    height: 275px;
+}
+
+.dots {
+    position: absolute;
+    right: 0;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.dot-1, .dot-2, .dot-3{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: red;
+    margin: .6rem 0;
+    cursor: pointer;
+}
+
+.dot-1{
+    background-color: rgba(249, 121, 24, 1);
+}
+
+.dot-2, .dot-3{
+    background-color: white;
+    border: 1px solid rgba(249, 121, 24, 1);
+}
+
+.explore-btn {
+    color: rgba(249, 121, 24, 1);
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.logo img{
+    width: 221px;
+    height: 100px;
+}
